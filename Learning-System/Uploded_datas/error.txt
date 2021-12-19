@@ -1,0 +1,14 @@
+2nd product add
+And 
+
+then remove not first but second first will be removed.
+
+
+2. can we change grid view column horigental to vertical??
+3. row data bound for hilighting editing certain column data grid view.
+4. add extra text on column gridview:
+Flash Sale:  scrolling annimation product: 
+on image click add to cart function>
+
+
+when hdd is used as ram

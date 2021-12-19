@@ -1,0 +1,360 @@
+D:\Taxas\Learning-System\bin\roslyn\csc.exe
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Collections.Immutable.dll
+D:\Taxas\Learning-System\bin\roslyn\System.IO.FileSystem.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Reflection.Metadata.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Taxas\Learning-System\bin\Learning-System.dll.config
+D:\Taxas\Learning-System\bin\Learning-System.dll
+D:\Taxas\Learning-System\bin\Learning-System.pdb
+D:\Taxas\Learning-System\bin\roslyn\csc.exe.config
+D:\Taxas\Learning-System\bin\roslyn\csc.rsp
+D:\Taxas\Learning-System\bin\roslyn\csi.exe
+D:\Taxas\Learning-System\bin\roslyn\csi.exe.config
+D:\Taxas\Learning-System\bin\roslyn\csi.rsp
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Taxas\Learning-System\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Taxas\Learning-System\bin\roslyn\System.AppContext.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Console.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Globalization.Calendars.dll
+D:\Taxas\Learning-System\bin\roslyn\System.IO.Compression.dll
+D:\Taxas\Learning-System\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Taxas\Learning-System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Net.Http.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Net.Sockets.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Taxas\Learning-System\bin\roslyn\System.ValueTuple.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Xml.XPath.dll
+D:\Taxas\Learning-System\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Taxas\Learning-System\bin\roslyn\vbc.exe
+D:\Taxas\Learning-System\bin\roslyn\vbc.exe.config
+D:\Taxas\Learning-System\bin\roslyn\vbc.rsp
+D:\Taxas\Learning-System\bin\roslyn\VBCSCompiler.exe
+D:\Taxas\Learning-System\bin\roslyn\VBCSCompiler.exe.config
+D:\Taxas\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Taxas\Learning-System\bin\Microsoft.Web.Infrastructure.dll
+D:\Taxas\Learning-System\bin\System.Web.Helpers.dll
+D:\Taxas\Learning-System\bin\System.Web.Mvc.dll
+D:\Taxas\Learning-System\bin\System.Web.Razor.dll
+D:\Taxas\Learning-System\bin\System.Web.Webpages.Deployment.dll
+D:\Taxas\Learning-System\bin\System.Web.Webpages.dll
+D:\Taxas\Learning-System\bin\System.Web.Webpages.Razor.dll
+D:\Taxas\Learning-System\bin\System.Web.Razor.xml
+D:\Taxas\Learning-System\bin\System.Web.Webpages.xml
+D:\Taxas\Learning-System\bin\System.Web.Webpages.Deployment.xml
+D:\Taxas\Learning-System\bin\System.Web.Webpages.Razor.xml
+D:\Taxas\Learning-System\bin\System.Web.Helpers.xml
+D:\Taxas\Learning-System\bin\System.Web.Mvc.xml
+D:\Taxas\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Taxas\Learning-System\obj\Debug\Learning-System.csproj.CoreCompileInputs.cache
+D:\Taxas\Learning-System\obj\Debug\Learning-System.csproj.CopyComplete
+D:\Taxas\Learning-System\obj\Debug\Learning-System.dll
+D:\Taxas\Learning-System\obj\Debug\Learning-System.pdb
+E:\Taxas\Learning-System\bin\Learning-System.dll.config
+E:\Taxas\Learning-System\bin\Learning-System.dll
+E:\Taxas\Learning-System\bin\Learning-System.pdb
+E:\Taxas\Learning-System\bin\roslyn\csc.exe
+E:\Taxas\Learning-System\bin\roslyn\csc.exe.config
+E:\Taxas\Learning-System\bin\roslyn\csc.rsp
+E:\Taxas\Learning-System\bin\roslyn\csi.exe
+E:\Taxas\Learning-System\bin\roslyn\csi.exe.config
+E:\Taxas\Learning-System\bin\roslyn\csi.rsp
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Taxas\Learning-System\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Taxas\Learning-System\bin\roslyn\System.AppContext.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Collections.Immutable.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Console.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Globalization.Calendars.dll
+E:\Taxas\Learning-System\bin\roslyn\System.IO.Compression.dll
+E:\Taxas\Learning-System\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Taxas\Learning-System\bin\roslyn\System.IO.FileSystem.dll
+E:\Taxas\Learning-System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Net.Http.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Net.Sockets.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Reflection.Metadata.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Taxas\Learning-System\bin\roslyn\System.ValueTuple.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Xml.XPath.dll
+E:\Taxas\Learning-System\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Taxas\Learning-System\bin\roslyn\vbc.exe
+E:\Taxas\Learning-System\bin\roslyn\vbc.exe.config
+E:\Taxas\Learning-System\bin\roslyn\vbc.rsp
+E:\Taxas\Learning-System\bin\roslyn\VBCSCompiler.exe
+E:\Taxas\Learning-System\bin\roslyn\VBCSCompiler.exe.config
+E:\Taxas\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Taxas\Learning-System\bin\Microsoft.Web.Infrastructure.dll
+E:\Taxas\Learning-System\bin\System.Web.Helpers.dll
+E:\Taxas\Learning-System\bin\System.Web.Mvc.dll
+E:\Taxas\Learning-System\bin\System.Web.Razor.dll
+E:\Taxas\Learning-System\bin\System.Web.Webpages.Deployment.dll
+E:\Taxas\Learning-System\bin\System.Web.Webpages.dll
+E:\Taxas\Learning-System\bin\System.Web.Webpages.Razor.dll
+E:\Taxas\Learning-System\bin\System.Web.Razor.xml
+E:\Taxas\Learning-System\bin\System.Web.Webpages.xml
+E:\Taxas\Learning-System\bin\System.Web.Webpages.Deployment.xml
+E:\Taxas\Learning-System\bin\System.Web.Webpages.Razor.xml
+E:\Taxas\Learning-System\bin\System.Web.Helpers.xml
+E:\Taxas\Learning-System\bin\System.Web.Mvc.xml
+E:\Taxas\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Taxas\Learning-System\obj\Debug\Learning-System.csproj.CoreCompileInputs.cache
+E:\Taxas\Learning-System\obj\Debug\Learning-System.csproj.CopyComplete
+E:\Taxas\Learning-System\obj\Debug\Learning-System.dll
+E:\Taxas\Learning-System\obj\Debug\Learning-System.pdb
+E:\Taxas\Learning-System\obj\Debug\Learning-System.csproj.AssemblyReference.cache
+D:\Taxas\Learning-System\obj\Debug\Learning-System.csproj.AssemblyReference.cache
+D:\Learning-System\bin\Learning-System.dll.config
+D:\Learning-System\bin\Learning-System.dll
+D:\Learning-System\bin\Learning-System.pdb
+D:\Learning-System\bin\roslyn\csc.exe
+D:\Learning-System\bin\roslyn\csc.exe.config
+D:\Learning-System\bin\roslyn\csc.rsp
+D:\Learning-System\bin\roslyn\csi.exe
+D:\Learning-System\bin\roslyn\csi.exe.config
+D:\Learning-System\bin\roslyn\csi.rsp
+D:\Learning-System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Learning-System\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Learning-System\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Learning-System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Learning-System\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Learning-System\bin\roslyn\System.AppContext.dll
+D:\Learning-System\bin\roslyn\System.Collections.Immutable.dll
+D:\Learning-System\bin\roslyn\System.Console.dll
+D:\Learning-System\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Learning-System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Learning-System\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Learning-System\bin\roslyn\System.Globalization.Calendars.dll
+D:\Learning-System\bin\roslyn\System.IO.Compression.dll
+D:\Learning-System\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Learning-System\bin\roslyn\System.IO.FileSystem.dll
+D:\Learning-System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Learning-System\bin\roslyn\System.Net.Http.dll
+D:\Learning-System\bin\roslyn\System.Net.Sockets.dll
+D:\Learning-System\bin\roslyn\System.Reflection.Metadata.dll
+D:\Learning-System\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Learning-System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Learning-System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Learning-System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Learning-System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Learning-System\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Learning-System\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Learning-System\bin\roslyn\System.ValueTuple.dll
+D:\Learning-System\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Learning-System\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Learning-System\bin\roslyn\System.Xml.XPath.dll
+D:\Learning-System\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Learning-System\bin\roslyn\vbc.exe
+D:\Learning-System\bin\roslyn\vbc.exe.config
+D:\Learning-System\bin\roslyn\vbc.rsp
+D:\Learning-System\bin\roslyn\VBCSCompiler.exe
+D:\Learning-System\bin\roslyn\VBCSCompiler.exe.config
+D:\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Learning-System\bin\Microsoft.Web.Infrastructure.dll
+D:\Learning-System\bin\System.Web.Helpers.dll
+D:\Learning-System\bin\System.Web.Mvc.dll
+D:\Learning-System\bin\System.Web.Razor.dll
+D:\Learning-System\bin\System.Web.Webpages.Deployment.dll
+D:\Learning-System\bin\System.Web.Webpages.dll
+D:\Learning-System\bin\System.Web.Webpages.Razor.dll
+D:\Learning-System\bin\System.Web.Razor.xml
+D:\Learning-System\bin\System.Web.Webpages.xml
+D:\Learning-System\bin\System.Web.Webpages.Deployment.xml
+D:\Learning-System\bin\System.Web.Webpages.Razor.xml
+D:\Learning-System\bin\System.Web.Helpers.xml
+D:\Learning-System\bin\System.Web.Mvc.xml
+D:\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Learning-System\obj\Debug\Learning-System.csproj.AssemblyReference.cache
+D:\Learning-System\obj\Debug\Learning-System.csproj.CoreCompileInputs.cache
+D:\Learning-System\obj\Debug\Learning-System.csproj.CopyComplete
+D:\Learning-System\obj\Debug\Learning-System.dll
+D:\Learning-System\obj\Debug\Learning-System.pdb
+D:\lms mamagement\Learning-System\obj\Debug\Learning-System.csproj.AssemblyReference.cache
+D:\lms mamagement\Learning-System\obj\Debug\Learning-System.csproj.CoreCompileInputs.cache
+D:\lms mamagement\Learning-System\bin\Learning-System.dll.config
+D:\lms mamagement\Learning-System\bin\Learning-System.dll
+D:\lms mamagement\Learning-System\bin\Learning-System.pdb
+D:\lms mamagement\Learning-System\bin\roslyn\csc.exe
+D:\lms mamagement\Learning-System\bin\roslyn\csc.exe.config
+D:\lms mamagement\Learning-System\bin\roslyn\csc.rsp
+D:\lms mamagement\Learning-System\bin\roslyn\csi.exe
+D:\lms mamagement\Learning-System\bin\roslyn\csi.exe.config
+D:\lms mamagement\Learning-System\bin\roslyn\csi.rsp
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.Managed.Core.targets
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\lms mamagement\Learning-System\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.AppContext.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Collections.Immutable.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Console.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Globalization.Calendars.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.IO.Compression.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.IO.FileSystem.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Net.Http.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Net.Sockets.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Reflection.Metadata.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.ValueTuple.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Xml.XmlDocument.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Xml.XPath.dll
+D:\lms mamagement\Learning-System\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\lms mamagement\Learning-System\bin\roslyn\vbc.exe
+D:\lms mamagement\Learning-System\bin\roslyn\vbc.exe.config
+D:\lms mamagement\Learning-System\bin\roslyn\vbc.rsp
+D:\lms mamagement\Learning-System\bin\roslyn\VBCSCompiler.exe
+D:\lms mamagement\Learning-System\bin\roslyn\VBCSCompiler.exe.config
+D:\lms mamagement\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\lms mamagement\Learning-System\bin\Microsoft.Web.Infrastructure.dll
+D:\lms mamagement\Learning-System\bin\System.Web.Helpers.dll
+D:\lms mamagement\Learning-System\bin\System.Web.Mvc.dll
+D:\lms mamagement\Learning-System\bin\System.Web.Razor.dll
+D:\lms mamagement\Learning-System\bin\System.Web.Webpages.Deployment.dll
+D:\lms mamagement\Learning-System\bin\System.Web.Webpages.dll
+D:\lms mamagement\Learning-System\bin\System.Web.Webpages.Razor.dll
+D:\lms mamagement\Learning-System\bin\System.Web.Razor.xml
+D:\lms mamagement\Learning-System\bin\System.Web.Webpages.xml
+D:\lms mamagement\Learning-System\bin\System.Web.Webpages.Deployment.xml
+D:\lms mamagement\Learning-System\bin\System.Web.Webpages.Razor.xml
+D:\lms mamagement\Learning-System\bin\System.Web.Helpers.xml
+D:\lms mamagement\Learning-System\bin\System.Web.Mvc.xml
+D:\lms mamagement\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\lms mamagement\Learning-System\obj\Debug\Learning-System.csproj.CopyComplete
+D:\lms mamagement\Learning-System\obj\Debug\Learning-System.dll
+D:\lms mamagement\Learning-System\obj\Debug\Learning-System.pdb
+H:\lms mamagement\Learning-System\bin\Learning-System.dll.config
+H:\lms mamagement\Learning-System\bin\Learning-System.dll
+H:\lms mamagement\Learning-System\bin\Learning-System.pdb
+H:\lms mamagement\Learning-System\bin\roslyn\csc.exe
+H:\lms mamagement\Learning-System\bin\roslyn\csc.exe.config
+H:\lms mamagement\Learning-System\bin\roslyn\csc.rsp
+H:\lms mamagement\Learning-System\bin\roslyn\csi.exe
+H:\lms mamagement\Learning-System\bin\roslyn\csi.exe.config
+H:\lms mamagement\Learning-System\bin\roslyn\csi.rsp
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.Managed.Core.targets
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\lms mamagement\Learning-System\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.AppContext.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Collections.Immutable.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Console.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Globalization.Calendars.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.IO.Compression.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.IO.Compression.ZipFile.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.IO.FileSystem.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Net.Http.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Net.Sockets.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Reflection.Metadata.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Threading.Tasks.Extensions.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.ValueTuple.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Xml.XmlDocument.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Xml.XPath.dll
+H:\lms mamagement\Learning-System\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\lms mamagement\Learning-System\bin\roslyn\vbc.exe
+H:\lms mamagement\Learning-System\bin\roslyn\vbc.exe.config
+H:\lms mamagement\Learning-System\bin\roslyn\vbc.rsp
+H:\lms mamagement\Learning-System\bin\roslyn\VBCSCompiler.exe
+H:\lms mamagement\Learning-System\bin\roslyn\VBCSCompiler.exe.config
+H:\lms mamagement\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\lms mamagement\Learning-System\bin\Microsoft.Web.Infrastructure.dll
+H:\lms mamagement\Learning-System\bin\System.Web.Helpers.dll
+H:\lms mamagement\Learning-System\bin\System.Web.Mvc.dll
+H:\lms mamagement\Learning-System\bin\System.Web.Razor.dll
+H:\lms mamagement\Learning-System\bin\System.Web.Webpages.Deployment.dll
+H:\lms mamagement\Learning-System\bin\System.Web.Webpages.dll
+H:\lms mamagement\Learning-System\bin\System.Web.Webpages.Razor.dll
+H:\lms mamagement\Learning-System\bin\System.Web.Razor.xml
+H:\lms mamagement\Learning-System\bin\System.Web.Webpages.xml
+H:\lms mamagement\Learning-System\bin\System.Web.Webpages.Deployment.xml
+H:\lms mamagement\Learning-System\bin\System.Web.Webpages.Razor.xml
+H:\lms mamagement\Learning-System\bin\System.Web.Helpers.xml
+H:\lms mamagement\Learning-System\bin\System.Web.Mvc.xml
+H:\lms mamagement\Learning-System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\lms mamagement\Learning-System\obj\Debug\Learning-System.csproj.AssemblyReference.cache
+H:\lms mamagement\Learning-System\obj\Debug\Learning-System.csproj.CoreCompileInputs.cache
+H:\lms mamagement\Learning-System\obj\Debug\Learning-System.csproj.CopyComplete
+H:\lms mamagement\Learning-System\obj\Debug\Learning-System.dll
+H:\lms mamagement\Learning-System\obj\Debug\Learning-System.pdb

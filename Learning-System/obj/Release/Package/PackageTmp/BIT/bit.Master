@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="bit.master.cs" Inherits="Learning_System.BIT.bit" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>BIT Courses</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+   
+
+    <style>
+        .navbars {
+            position: fixed;
+            width: 100%;
+            z-index: 1000000;
+            top: 0;
+            height: 40px;
+            background-color: #1a0707;
+            opacity: 0.9;
+        }
+        a{
+            color:white;
+            font-size:17px;
+            text-decoration:none;
+        }
+
+
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="navbars" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;">
+            <div class="container">
+  <div class="row">
+    <div class="col-2">
+      <asp:LinkButton ID="Linkhome" runat="server" class="btn btn-primary" OnClick="Linkhome_Click">HOMEPAGE</asp:LinkButton>
+    </div>
+    <div class="col-10">
+      <h3 style="text-align:center;color:white;margin-top:5px;font-family:'Bauhaus 93'">BACHELOR IN INFORMATION TECHNOLOGY LEARNING METERIALS</h3>
+    </div>
+      </div>
+       </div>
+            
+            
+
+</div>
+          <div class="container-fluid" style="margin-top:80px; margin-bottom:40px;">
+     <div class="row">
+    <div class="col-3">
+        
+        
+    <asp:TreeView ID="TreeView1" runat="server" Font-Bold="False" Font-Size="9pt" Font-Strikeout="False" ForeColor="#000099" style="width:100%;" Font-Names="Bahnschrift;float:left;">
+            <Nodes>
+                <asp:TreeNode Text="BACHELOR IN INFO TECHNOLOGY" SelectAction="Expand" Value="BIT">
+                    <asp:TreeNode Text="Semester One" SelectAction="Expand" Value="Semester One">
+                        <asp:TreeNode Text="C Programming" SelectAction="Expand">
+                            <asp:TreeNode NavigateUrl="~/BIT/cProgram.aspx" Text="All Lecturer Notes" Value="Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/BIT/cProgramPacticles.aspx" Text="Practiclw to C [C Prog]" Value="Practiclw to C [C Prog]"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Internet Fundamental" Value="Internet Fundamental">
+                            <asp:TreeNode Text="All Lecture Note [IFA]" Value="Lecture Note " NavigateUrl="~/BIT/Internet_fundamental.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to IFA" Value="Practicle to IFA" NavigateUrl="~/BIT/Internet_funda_prac.aspx"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Basic Computer Architecture" Value="Basic Computer Architecture" NavigateUrl="~/BIT/com_Architect.aspx">
+                            <asp:TreeNode Text="All Lecturer Notes[BCA]" Value="All Lecturer Notes[BCA]" NavigateUrl="~/BIT/com_Architect.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicles to BCA" Value="Practicles to BCA" NavigateUrl="~/BIT/Computer_archi_prac.aspx"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Computer Network" Value="Computer Network">
+                            <asp:TreeNode Text="All Lecturer Notes[CN]" Value="All Lecturer Notes[CN]" NavigateUrl="~/BIT/computer_Network.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to CN" Value="Practicle to CN" NavigateUrl="~/BIT/Computer_network_prac.aspx"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Busines English" Value="Busines English">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to ENG" Value="Practicle to ENG"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Mathematics 1" Value="Mathematics 1">
+                            <asp:TreeNode Text="All Lecture Note[Math 1]" Value="All Lecture Note[Math 1]"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to Math1" Value="Practicle to Math1"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Semester Two" SelectAction="Expand" Value="Semester Two">
+                        <asp:TreeNode Text="C++ Programming" SelectAction="Expand" Value="C++ Programming">
+                            <asp:TreeNode Text="All Lecturer Notes[C++ Progr]" Value="All Lecturer Notes[C++ Progr]"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to C++" Value="Practicle to C++"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Quantative Method" Value="Quantative Method">
+                            <asp:TreeNode Text="All Lecture Notes" Value="All Lecture Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to Qm" Value="Practicle to Qm"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Digital Logic" Value="Digital Logic">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to QM" Value="Practicle to QM"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="System Analyst &amp; Design" Value="System Analyst &amp; Design">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to SAD" Value="Practicle to SAD"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Computer Network " Value="Computer Network ">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to SAD" Value="Practicle to SAD"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="LS &amp; HR" Value="LS &amp; HR">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Semester Three" Value="Semester Three">
+                        <asp:TreeNode Text="Operating System" Value="Operating System">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to OS" Value="Practicle to OS"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Database Managment" Value="Database Managment">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to DBM" Value="Practicle to DBM"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="E-Commerce" Value="E-Commerce">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to EC" Value="Practicle to EC"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Data Structure &amp; Algorithm" Value="Data Structure &amp; Algorithm">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to DSA" Value="Practicle to DSA"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Web Technology" Value="Web Technology">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to WT" Value="Practicle to WT"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Semester Four" Value="Semester Four">
+                        <asp:TreeNode Text="Mobile Computing" Value="Mobile Computing">
+                            <asp:TreeNode Text="All Lecturer Note of MC" Value="All Lecturer Note of MC"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle Notee to MC" Value="Practicle Notee to MC"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Software Engineering" Value="Software Engineering">
+                            <asp:TreeNode Text="All Lecturer Notes SE" Value="All Lecturer Notes SE"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to SE" Value="Practicle to SE"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Real Time System" Value="Real Time System">
+                            <asp:TreeNode Text="All Lecturer Notes RTS" Value="All Lecturer Notes RTS"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to RTS" Value="Practicle to RTS"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Multimedia System" Value="Multimedia System">
+                            <asp:TreeNode Text="All Practicle Notes of MS" Value="All Practicle Notes of MS"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to MS" Value="Practicle to MS"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="RDBMS With SQL" Value="RDBMS With SQL">
+                            <asp:TreeNode Text="All Lecturer Notes of RDBMS" Value="All Lecturer Notes of RDBMS"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to RDBMS" Value="Practicle to RDBMS"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Semester Five" Value="Semester Five">
+                        <asp:TreeNode Text="Artificial Intelligence" Value="Artificial Intelligence">
+                            <asp:TreeNode Text="All Lecturer Note of AI" Value="All Lecturer Note of AI"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to AI" Value="Practicle to AI"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Mobile Computing" Value="Mobile Computing">
+                            <asp:TreeNode Text="All Lecturer Notes of MC" Value="All Lecturer Notes of MC"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to MC" Value="Practicle to MC"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Real Time System" Value="Real Time System">
+                            <asp:TreeNode Text="All Lecturer Note of RTS" Value="All Lecturer Note of RTS"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to RTS" Value="Practicle to RTS"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Semester Six" Value="Semester Six">
+                        <asp:TreeNode Text="Cloud Computing" Value="Cloud Computing">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Emerging Programming platform" Value="Emerging Programming platform">
+                            <asp:TreeNode Text="All Lecturer Notes" Value="All Lecturer Notes"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="WML &amp; WAP Programming" Value="WML &amp; WAP Programming">
+                            <asp:TreeNode Text="All Lecturer Notes Of WML" Value="All Lecturer Notes Of WML"></asp:TreeNode>
+                            <asp:TreeNode Text="Practicle to WML" Value="Practicle to WML"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Industrial Training" Value="Industrial Training">
+                            <asp:TreeNode Text="Industrial report" Value="Industrial report"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+            <NodeStyle HorizontalPadding="10px" VerticalPadding="5px" />
+        </asp:TreeView>
+ 
+</div>
+
+        
+        
+        
+    <div class="col-9" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; float:right;text-align:center;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+        </div>
+        </div>
+  </div>
+
+        <div class="card-footer" style="text-align:center; height:100px; background-color:#ff6c60; clear:both;">
+            
+            Copy@right 2021
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</body>
+</html>

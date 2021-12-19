@@ -1,0 +1,1050 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEA017D7-0FF1-40CA-B623-C3748A104E42}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learning_System</RootNamespace>
+    <AssemblyName>Learning-System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BIT\Fifth_sem\AI.aspx" />
+    <Content Include="BIT\Fifth_sem\AI_practical.aspx" />
+    <Content Include="BIT\Fifth_sem\CompilerDesign.aspx" />
+    <Content Include="BIT\Fifth_sem\CompilerDesign_practical.aspx" />
+    <Content Include="BIT\Fifth_sem\MobileComputing.aspx" />
+    <Content Include="BIT\Fifth_sem\MobileComputing_practical.aspx" />
+    <Content Include="BIT\Fifth_sem\RealTimeSystem.aspx" />
+    <Content Include="BIT\Fifth_sem\RealTimeSys_practical.aspx" />
+    <Content Include="BIT\first_semester\business_Eng.aspx" />
+    <Content Include="BIT\first_semester\Computer_archi_prac.aspx" />
+    <Content Include="BIT\Fourth_sem\FundaAlgorithm.aspx" />
+    <Content Include="BIT\Fourth_sem\FundaAlgorithm_practical.aspx" />
+    <Content Include="BIT\Fourth_sem\JAVA.aspx" />
+    <Content Include="BIT\Fourth_sem\JAVA_practical.aspx" />
+    <Content Include="BIT\Fourth_sem\RDBMS.aspx" />
+    <Content Include="BIT\Fourth_sem\RDBMS_practical.aspx" />
+    <Content Include="BIT\Fourth_sem\softEngineering_practical.aspx" />
+    <Content Include="BIT\Fourth_sem\SoftwareEngineering.aspx" />
+    <Content Include="BIT\Fourth_sem\TCPIP.aspx" />
+    <Content Include="BIT\Fourth_sem\TCPIP_Practical.aspx" />
+    <Content Include="BIT\second_sem\computer_Network.aspx" />
+    <Content Include="BIT\second_sem\Computer_network_prac.aspx" />
+    <Content Include="BIT\first_semester\cProgram.aspx" />
+    <Content Include="BIT\first_semester\com_Architect.aspx" />
+    <Content Include="BIT\first_semester\cProgramPacticles.aspx" />
+    <Content Include="BIT\first_semester\Internet_fundamental.aspx" />
+    <Content Include="BIT\first_semester\Internet_funda_prac.aspx" />
+    <Content Include="BIT\first_semester\Math1.aspx" />
+    <Content Include="BIT\second_sem\Cplus_plus.aspx" />
+    <Content Include="BIT\second_sem\Cplus_plus_practical.aspx" />
+    <Content Include="BIT\second_sem\Digital_logic.aspx" />
+    <Content Include="BIT\second_sem\Digital_logic_practical.aspx" />
+    <Content Include="BIT\second_sem\LSHR.aspx" />
+    <Content Include="BIT\second_sem\Quanti_math.aspx" />
+    <Content Include="BIT\second_sem\SAD.aspx" />
+    <Content Include="BIT\second_sem\SAD_practical.aspx" />
+    <Content Include="BIT\Sixth_sem\CloudComputing.aspx" />
+    <Content Include="BIT\Sixth_sem\CloudComputing_practical.aspx" />
+    <Content Include="BIT\Sixth_sem\EmergingTechnology.aspx" />
+    <Content Include="BIT\Sixth_sem\EmergingTech_practical.aspx" />
+    <Content Include="BIT\Sixth_sem\IndustrialTraining.aspx" />
+    <Content Include="BIT\Sixth_sem\IndustrialTraining_practical.aspx" />
+    <Content Include="BIT\Sixth_sem\WML.aspx" />
+    <Content Include="BIT\Sixth_sem\WML_practical.aspx" />
+    <Content Include="BIT\Third_sem\DBMS.aspx" />
+    <Content Include="BIT\Third_sem\DBMS_Practical.aspx" />
+    <Content Include="BIT\Third_sem\DSA.aspx" />
+    <Content Include="BIT\Third_sem\DSA_Practical.aspx" />
+    <Content Include="BIT\Third_sem\Ecommerce.aspx" />
+    <Content Include="BIT\Third_sem\Ecommerce_practical.aspx" />
+    <Content Include="BIT\Third_sem\Operating_system.aspx" />
+    <Content Include="BIT\Third_sem\Os_practical.aspx" />
+    <Content Include="BIT\Third_sem\WebTechnology.aspx" />
+    <Content Include="BIT\Third_sem\WebTechnology_practical.aspx" />
+    <Content Include="BIT\Default.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="img\6 semester-BIT.png" />
+    <Content Include="img\back.png" />
+    <Content Include="img\Capture.PNG" />
+    <Content Include="Login.aspx" />
+    <Content Include="registration.aspx" />
+    <Content Include="slide\2.jpg" />
+    <Content Include="slide\3.jpg" />
+    <Content Include="slide\a.jpg" />
+    <Content Include="slide\fs.jpg" />
+    <Content Include="slide\logo.png" />
+    <Content Include="slide\sd.jpg" />
+    <Content Include="slide\se1.jpg" />
+    <Content Include="slide\td.jpg" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="BIT\bit.Master" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="style.css" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
+    <Content Include="upload_sec\dash.aspx" />
+    <Content Include="upload_sec\Fifth_sem\AI.aspx" />
+    <Content Include="upload_sec\Fifth_sem\ComplierDesign.aspx" />
+    <Content Include="upload_sec\Fifth_sem\MobileComputing.aspx" />
+    <Content Include="upload_sec\Fifth_sem\RealTimeSyatem.aspx" />
+    <Content Include="upload_sec\first_sem\BasicCompArch.aspx" />
+    <Content Include="upload_sec\first_sem\BusinessEng.aspx" />
+    <Content Include="upload_sec\Fourth_sem\Fundamental Of Algorithm.aspx" />
+    <Content Include="upload_sec\Fourth_sem\JAVA.aspx" />
+    <Content Include="upload_sec\Fourth_sem\RDBMS.aspx" />
+    <Content Include="upload_sec\Fourth_sem\SoftwareEngineering.aspx" />
+    <Content Include="upload_sec\Fourth_sem\TCPIP.aspx" />
+    <Content Include="upload_sec\second_sem\CompNetwork.aspx" />
+    <Content Include="upload_sec\first_sem\c_programming.aspx" />
+    <Content Include="upload_sec\first_sem\internetfunda.aspx" />
+    <Content Include="upload_sec\first_sem\math1.aspx" />
+    <Content Include="upload_sec\second_sem\CplusPlus.aspx" />
+    <Content Include="upload_sec\second_sem\DigitalLogic.aspx" />
+    <Content Include="upload_sec\second_sem\LSHR.aspx" />
+    <Content Include="upload_sec\second_sem\QuantativeMethod.aspx" />
+    <Content Include="upload_sec\second_sem\SAD.aspx" />
+    <Content Include="upload_sec\Sixth_sem\CloudComputing.aspx" />
+    <Content Include="upload_sec\Sixth_sem\EmergingTechnology.aspx" />
+    <Content Include="upload_sec\Sixth_sem\IndustrialTraining.aspx" />
+    <Content Include="upload_sec\Sixth_sem\WML.aspx" />
+    <Content Include="upload_sec\Third_sem\DSA.aspx" />
+    <Content Include="upload_sec\Third_sem\Ecommerce.aspx" />
+    <Content Include="upload_sec\Third_sem\OperatingSys.aspx" />
+    <Content Include="upload_sec\Third_sem\DBMS.aspx" />
+    <Content Include="upload_sec\Third_sem\WebTechnology.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BIT\bit.Master.cs">
+      <DependentUpon>bit.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\bit.Master.designer.cs">
+      <DependentUpon>bit.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\AI.aspx.cs">
+      <DependentUpon>AI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\AI.aspx.designer.cs">
+      <DependentUpon>AI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\AI_practical.aspx.cs">
+      <DependentUpon>AI_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\AI_practical.aspx.designer.cs">
+      <DependentUpon>AI_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\CompilerDesign.aspx.cs">
+      <DependentUpon>CompilerDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\CompilerDesign.aspx.designer.cs">
+      <DependentUpon>CompilerDesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\CompilerDesign_practical.aspx.cs">
+      <DependentUpon>CompilerDesign_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\CompilerDesign_practical.aspx.designer.cs">
+      <DependentUpon>CompilerDesign_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\MobileComputing.aspx.cs">
+      <DependentUpon>MobileComputing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\MobileComputing.aspx.designer.cs">
+      <DependentUpon>MobileComputing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\MobileComputing_practical.aspx.cs">
+      <DependentUpon>MobileComputing_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\MobileComputing_practical.aspx.designer.cs">
+      <DependentUpon>MobileComputing_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\RealTimeSystem.aspx.cs">
+      <DependentUpon>RealTimeSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\RealTimeSystem.aspx.designer.cs">
+      <DependentUpon>RealTimeSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\RealTimeSys_practical.aspx.cs">
+      <DependentUpon>RealTimeSys_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fifth_sem\RealTimeSys_practical.aspx.designer.cs">
+      <DependentUpon>RealTimeSys_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\business_Eng.aspx.cs">
+      <DependentUpon>business_Eng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\business_Eng.aspx.designer.cs">
+      <DependentUpon>business_Eng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\Computer_archi_prac.aspx.cs">
+      <DependentUpon>Computer_archi_prac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\Computer_archi_prac.aspx.designer.cs">
+      <DependentUpon>Computer_archi_prac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\FundaAlgorithm.aspx.cs">
+      <DependentUpon>FundaAlgorithm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\FundaAlgorithm.aspx.designer.cs">
+      <DependentUpon>FundaAlgorithm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\FundaAlgorithm_practical.aspx.cs">
+      <DependentUpon>FundaAlgorithm_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\FundaAlgorithm_practical.aspx.designer.cs">
+      <DependentUpon>FundaAlgorithm_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\JAVA.aspx.cs">
+      <DependentUpon>JAVA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\JAVA.aspx.designer.cs">
+      <DependentUpon>JAVA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\JAVA_practical.aspx.cs">
+      <DependentUpon>JAVA_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\JAVA_practical.aspx.designer.cs">
+      <DependentUpon>JAVA_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\RDBMS.aspx.cs">
+      <DependentUpon>RDBMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\RDBMS.aspx.designer.cs">
+      <DependentUpon>RDBMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\RDBMS_practical.aspx.cs">
+      <DependentUpon>RDBMS_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\RDBMS_practical.aspx.designer.cs">
+      <DependentUpon>RDBMS_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\softEngineering_practical.aspx.cs">
+      <DependentUpon>softEngineering_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\softEngineering_practical.aspx.designer.cs">
+      <DependentUpon>softEngineering_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\SoftwareEngineering.aspx.cs">
+      <DependentUpon>SoftwareEngineering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\SoftwareEngineering.aspx.designer.cs">
+      <DependentUpon>SoftwareEngineering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\TCPIP.aspx.cs">
+      <DependentUpon>TCPIP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\TCPIP.aspx.designer.cs">
+      <DependentUpon>TCPIP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\TCPIP_Practical.aspx.cs">
+      <DependentUpon>TCPIP_Practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Fourth_sem\TCPIP_Practical.aspx.designer.cs">
+      <DependentUpon>TCPIP_Practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\computer_Network.aspx.cs">
+      <DependentUpon>computer_Network.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\computer_Network.aspx.designer.cs">
+      <DependentUpon>computer_Network.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\Computer_network_prac.aspx.cs">
+      <DependentUpon>Computer_network_prac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\Computer_network_prac.aspx.designer.cs">
+      <DependentUpon>Computer_network_prac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\cProgram.aspx.cs">
+      <DependentUpon>cProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\cProgram.aspx.designer.cs">
+      <DependentUpon>cProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\com_Architect.aspx.cs">
+      <DependentUpon>com_Architect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\com_Architect.aspx.designer.cs">
+      <DependentUpon>com_Architect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\cProgramPacticles.aspx.cs">
+      <DependentUpon>cProgramPacticles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\cProgramPacticles.aspx.designer.cs">
+      <DependentUpon>cProgramPacticles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\Internet_fundamental.aspx.cs">
+      <DependentUpon>Internet_fundamental.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\Internet_fundamental.aspx.designer.cs">
+      <DependentUpon>Internet_fundamental.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\Internet_funda_prac.aspx.cs">
+      <DependentUpon>Internet_funda_prac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\Internet_funda_prac.aspx.designer.cs">
+      <DependentUpon>Internet_funda_prac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\first_semester\Math1.aspx.cs">
+      <DependentUpon>Math1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\first_semester\Math1.aspx.designer.cs">
+      <DependentUpon>Math1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\Cplus_plus.aspx.cs">
+      <DependentUpon>Cplus_plus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\Cplus_plus.aspx.designer.cs">
+      <DependentUpon>Cplus_plus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\Cplus_plus_practical.aspx.cs">
+      <DependentUpon>Cplus_plus_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\Cplus_plus_practical.aspx.designer.cs">
+      <DependentUpon>Cplus_plus_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\Digital_logic.aspx.cs">
+      <DependentUpon>Digital_logic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\Digital_logic.aspx.designer.cs">
+      <DependentUpon>Digital_logic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\Digital_logic_practical.aspx.cs">
+      <DependentUpon>Digital_logic_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\Digital_logic_practical.aspx.designer.cs">
+      <DependentUpon>Digital_logic_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\LSHR.aspx.cs">
+      <DependentUpon>LSHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\LSHR.aspx.designer.cs">
+      <DependentUpon>LSHR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\Quanti_math.aspx.cs">
+      <DependentUpon>Quanti_math.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\Quanti_math.aspx.designer.cs">
+      <DependentUpon>Quanti_math.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\SAD.aspx.cs">
+      <DependentUpon>SAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\SAD.aspx.designer.cs">
+      <DependentUpon>SAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\second_sem\SAD_practical.aspx.cs">
+      <DependentUpon>SAD_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\second_sem\SAD_practical.aspx.designer.cs">
+      <DependentUpon>SAD_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\CloudComputing.aspx.cs">
+      <DependentUpon>CloudComputing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\CloudComputing.aspx.designer.cs">
+      <DependentUpon>CloudComputing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\CloudComputing_practical.aspx.cs">
+      <DependentUpon>CloudComputing_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\CloudComputing_practical.aspx.designer.cs">
+      <DependentUpon>CloudComputing_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\EmergingTechnology.aspx.cs">
+      <DependentUpon>EmergingTechnology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\EmergingTechnology.aspx.designer.cs">
+      <DependentUpon>EmergingTechnology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\EmergingTech_practical.aspx.cs">
+      <DependentUpon>EmergingTech_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\EmergingTech_practical.aspx.designer.cs">
+      <DependentUpon>EmergingTech_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\IndustrialTraining.aspx.cs">
+      <DependentUpon>IndustrialTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\IndustrialTraining.aspx.designer.cs">
+      <DependentUpon>IndustrialTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\IndustrialTraining_practical.aspx.cs">
+      <DependentUpon>IndustrialTraining_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\IndustrialTraining_practical.aspx.designer.cs">
+      <DependentUpon>IndustrialTraining_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\WML.aspx.cs">
+      <DependentUpon>WML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\WML.aspx.designer.cs">
+      <DependentUpon>WML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\WML_practical.aspx.cs">
+      <DependentUpon>WML_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Sixth_sem\WML_practical.aspx.designer.cs">
+      <DependentUpon>WML_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DBMS.aspx.cs">
+      <DependentUpon>DBMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DBMS.aspx.designer.cs">
+      <DependentUpon>DBMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DBMS_Practical.aspx.cs">
+      <DependentUpon>DBMS_Practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DBMS_Practical.aspx.designer.cs">
+      <DependentUpon>DBMS_Practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DSA.aspx.cs">
+      <DependentUpon>DSA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DSA.aspx.designer.cs">
+      <DependentUpon>DSA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DSA_Practical.aspx.cs">
+      <DependentUpon>DSA_Practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\DSA_Practical.aspx.designer.cs">
+      <DependentUpon>DSA_Practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Ecommerce.aspx.cs">
+      <DependentUpon>Ecommerce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Ecommerce.aspx.designer.cs">
+      <DependentUpon>Ecommerce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Ecommerce_practical.aspx.cs">
+      <DependentUpon>Ecommerce_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Ecommerce_practical.aspx.designer.cs">
+      <DependentUpon>Ecommerce_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Operating_system.aspx.cs">
+      <DependentUpon>Operating_system.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Operating_system.aspx.designer.cs">
+      <DependentUpon>Operating_system.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Os_practical.aspx.cs">
+      <DependentUpon>Os_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\Os_practical.aspx.designer.cs">
+      <DependentUpon>Os_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\WebTechnology.aspx.cs">
+      <DependentUpon>WebTechnology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\WebTechnology.aspx.designer.cs">
+      <DependentUpon>WebTechnology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Third_sem\WebTechnology_practical.aspx.cs">
+      <DependentUpon>WebTechnology_practical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Third_sem\WebTechnology_practical.aspx.designer.cs">
+      <DependentUpon>WebTechnology_practical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BIT\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BIT\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="learning.Master.cs">
+      <DependentUpon>learning.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="learning.Master.designer.cs">
+      <DependentUpon>learning.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\dash.aspx.cs">
+      <DependentUpon>dash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\dash.aspx.designer.cs">
+      <DependentUpon>dash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\AI.aspx.cs">
+      <DependentUpon>AI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\AI.aspx.designer.cs">
+      <DependentUpon>AI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\ComplierDesign.aspx.cs">
+      <DependentUpon>ComplierDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\ComplierDesign.aspx.designer.cs">
+      <DependentUpon>ComplierDesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\MobileComputing.aspx.cs">
+      <DependentUpon>MobileComputing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\MobileComputing.aspx.designer.cs">
+      <DependentUpon>MobileComputing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\RealTimeSyatem.aspx.cs">
+      <DependentUpon>RealTimeSyatem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fifth_sem\RealTimeSyatem.aspx.designer.cs">
+      <DependentUpon>RealTimeSyatem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\BasicCompArch.aspx.cs">
+      <DependentUpon>BasicCompArch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\BasicCompArch.aspx.designer.cs">
+      <DependentUpon>BasicCompArch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\BusinessEng.aspx.cs">
+      <DependentUpon>BusinessEng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\BusinessEng.aspx.designer.cs">
+      <DependentUpon>BusinessEng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\Fundamental Of Algorithm.aspx.cs">
+      <DependentUpon>Fundamental Of Algorithm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\Fundamental Of Algorithm.aspx.designer.cs">
+      <DependentUpon>Fundamental Of Algorithm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\JAVA.aspx.cs">
+      <DependentUpon>JAVA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\JAVA.aspx.designer.cs">
+      <DependentUpon>JAVA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\RDBMS.aspx.cs">
+      <DependentUpon>RDBMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\RDBMS.aspx.designer.cs">
+      <DependentUpon>RDBMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\SoftwareEngineering.aspx.cs">
+      <DependentUpon>SoftwareEngineering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\SoftwareEngineering.aspx.designer.cs">
+      <DependentUpon>SoftwareEngineering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\TCPIP.aspx.cs">
+      <DependentUpon>TCPIP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Fourth_sem\TCPIP.aspx.designer.cs">
+      <DependentUpon>TCPIP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\CompNetwork.aspx.cs">
+      <DependentUpon>CompNetwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\CompNetwork.aspx.designer.cs">
+      <DependentUpon>CompNetwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\c_programming.aspx.cs">
+      <DependentUpon>c_programming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\c_programming.aspx.designer.cs">
+      <DependentUpon>c_programming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\internetfunda.aspx.cs">
+      <DependentUpon>internetfunda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\internetfunda.aspx.designer.cs">
+      <DependentUpon>internetfunda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\math1.aspx.cs">
+      <DependentUpon>math1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\first_sem\math1.aspx.designer.cs">
+      <DependentUpon>math1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\CplusPlus.aspx.cs">
+      <DependentUpon>CplusPlus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\CplusPlus.aspx.designer.cs">
+      <DependentUpon>CplusPlus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\DigitalLogic.aspx.cs">
+      <DependentUpon>DigitalLogic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\DigitalLogic.aspx.designer.cs">
+      <DependentUpon>DigitalLogic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\LSHR.aspx.cs">
+      <DependentUpon>LSHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\LSHR.aspx.designer.cs">
+      <DependentUpon>LSHR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\QuantativeMethod.aspx.cs">
+      <DependentUpon>QuantativeMethod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\QuantativeMethod.aspx.designer.cs">
+      <DependentUpon>QuantativeMethod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\SAD.aspx.cs">
+      <DependentUpon>SAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\second_sem\SAD.aspx.designer.cs">
+      <DependentUpon>SAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\CloudComputing.aspx.cs">
+      <DependentUpon>CloudComputing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\CloudComputing.aspx.designer.cs">
+      <DependentUpon>CloudComputing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\EmergingTechnology.aspx.cs">
+      <DependentUpon>EmergingTechnology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\EmergingTechnology.aspx.designer.cs">
+      <DependentUpon>EmergingTechnology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\IndustrialTraining.aspx.cs">
+      <DependentUpon>IndustrialTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\IndustrialTraining.aspx.designer.cs">
+      <DependentUpon>IndustrialTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\WML.aspx.cs">
+      <DependentUpon>WML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Sixth_sem\WML.aspx.designer.cs">
+      <DependentUpon>WML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\DSA.aspx.cs">
+      <DependentUpon>DSA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\DSA.aspx.designer.cs">
+      <DependentUpon>DSA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\Ecommerce.aspx.cs">
+      <DependentUpon>Ecommerce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\Ecommerce.aspx.designer.cs">
+      <DependentUpon>Ecommerce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\OperatingSys.aspx.cs">
+      <DependentUpon>OperatingSys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\OperatingSys.aspx.designer.cs">
+      <DependentUpon>OperatingSys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\DBMS.aspx.cs">
+      <DependentUpon>DBMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\DBMS.aspx.designer.cs">
+      <DependentUpon>DBMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\WebTechnology.aspx.cs">
+      <DependentUpon>WebTechnology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\Third_sem\WebTechnology.aspx.designer.cs">
+      <DependentUpon>WebTechnology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload_sec\upload.Master.cs">
+      <DependentUpon>upload.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload_sec\upload.Master.designer.cs">
+      <DependentUpon>upload.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="learning.Master" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="upload_sec\upload.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Uploded_datas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55625</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

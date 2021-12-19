@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="learning.master.cs" Inherits="Learning_System.learning" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>Texas College Virtual System</title>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" /> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+ 
+   
+    <link href="style.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+       
+       <div class="container-fluid">
+           
+  <div class="row">
+    <div class="col-sm-2">
+        <img src="slide/logo.png" style="margin-left:0px; padding:10px; margin-top:0px; width:190px; height:80px;" />
+    </div>
+    <div class="col-sm-7">
+        <h3 style="text-align:center; font-weight:bold; font-size:40px; color:#002366; margin-top:20px;">TEXAS LEARNING SYSTEM</h3>
+    </div>
+    <div class="col-sm-3">
+        <div style="margin-top:5px; padding:10px; text-align:right;">
+        <asp:LinkButton ID="Linklogin" runat="server" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" OnClick="Linklogin_Click">Login</asp:LinkButton> <asp:LinkButton ID="Linkregister" runat="server" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" OnClick="Linkregister_Click">Register</asp:LinkButton>
+    </div>
+    </div>
+  </div>
+</div>
+            
+       
+           <nav class="navbar navbar-expand-md navbar-light " style="border-radius:0;height:auto; background-color:#002366">
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div style="margin-left:auto; margin-right:auto;text-align:center;"> 
+        <asp:Menu ID="MainMenu" runat="server" Orientation="horizontal" class="navbar-nav mr-auto" StaticMenuStyle-CssClass="nav-item" StaticSelectedStyle-CssClass="nav-item" DynamicMenuStyle-CssClass="nav-item dropdown-menu" RenderingMode="List" role="menu" itemscope="itemscope" Font-Bold="True" Font-Names="Candara Light" Font-Size="X-Large" ForeColor="#FFFFFF" StaticEnableDefaultPopOutImage="false" MaximumDynamicDisplayLevels="0">
+
+<DynamicMenuStyle CssClass="nav-item dropdown-menu" BackColor="#930adc" VerticalPadding="0px"></DynamicMenuStyle>
+                <Items>
+                    <asp:MenuItem Text="MCS" Value="MCS"></asp:MenuItem>
+                    <asp:MenuItem Text="MBA" Value="MBA"></asp:MenuItem>
+                    <asp:MenuItem Text="BBA" Value="BBA"></asp:MenuItem>
+                    <asp:MenuItem Text="BIT" Value="BIT" NavigateUrl="~/default.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="BCS" Value="BCS"></asp:MenuItem>
+                    <asp:MenuItem Text="BHM" Value="BHM"></asp:MenuItem>
+                </Items>
+
+                <LevelMenuItemStyles>
+                    <asp:MenuItemStyle CssClass="dropdown-item" HorizontalPadding="20px" Height="70px" VerticalPadding="15px" />
+                </LevelMenuItemStyles>
+                <LevelSelectedStyles>
+                    <asp:MenuItemStyle CssClass="nav-item active" Font-Underline="False" />
+                </LevelSelectedStyles>
+                <StaticHoverStyle Font-Underline="true" ForeColor="#ff0000" />
+
+<StaticMenuStyle CssClass="nav-item"></StaticMenuStyle>
+
+                <StaticSelectedStyle Font-Bold="true"   />
+            <DynamicHoverStyle BackColor="#0033CC" />
+            <DynamicMenuItemStyle CssClass="dropdown-item" BackColor="#CC66FF" BorderStyle="None" Height="40px" HorizontalPadding="10px" ItemSpacing="10px" VerticalPadding="10px" />
+        </asp:Menu>
+                 </div>
+       </div>
+        
+    </nav>
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+                
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                    
+                </div>
+                
+      </div>
+        
+        <br />
+<div class="card-footer" style="height:auto;text-align:justify;background-color:#002366;color:#ffffff">
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+     <h3>QUICK LISTS</h3>
+        <hr />
+        
+        <asp:Menu ID="Menu1" runat="server" Font-Bold="False" Font-Names="Candara Light" ForeColor="White" Font-Size="X-Large">
+            <Items>
+                <asp:MenuItem Text="Home" Value="HOME"></asp:MenuItem>
+                <asp:MenuItem Text="Programs" Value="PROGRAMS"></asp:MenuItem>
+                <asp:MenuItem Text="Contact" Value="CONTACT"></asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle HorizontalPadding="10px" VerticalPadding="4px" />
+        </asp:Menu>
+        
+    </div>
+    <div class="col-sm">
+      <h3>ADDITIONAL INFO</h3>
+        <hr />
+        <asp:Menu ID="Menu2" runat="server" Font-Bold="False" Font-Names="Candara Light" ForeColor="White" Font-Size="X-Large">
+            <Items>
+                <asp:MenuItem Text="Examination Rules &amp; Regulation" Value="Examination Rules &amp; Regulation"></asp:MenuItem>
+                <asp:MenuItem Text="Examination Schedules" Value="Examination Schedules"></asp:MenuItem>
+                <asp:MenuItem Text="Hollydays" Value="Hollydays"></asp:MenuItem>
+                <asp:MenuItem Text="Photo Galary" Value="Photo Galary"></asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle HorizontalPadding="10px" VerticalPadding="4px" />
+        </asp:Menu>
+    </div>
+    <div class="col-sm">
+       <h3>ADDITIONAL INFO</h3>
+        <hr />
+        <p style="font-family:Candara Light; font-size:large;">
+CONTACT NO:+977-9801644462<br />
+Mitrapark, Chabahil
+Kathmandu, Nepal<br />
+enquiry@texasintl.edu.np
+        </p>
+    </div>
+  </div>
+</div>
+    <br /><br />
+</div>
+</form>
+</body>
+</html>

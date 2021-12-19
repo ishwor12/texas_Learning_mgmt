@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="upload.master.cs" Inherits="Learning_System.upload_sec.upload" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+          <div class="container-fluid">
+           
+  <div class="row">
+    <div class="col-sm-2">
+        <img src="../slide/extrasmall.png" style="margin-left:10px; padding:10px;" />
+    </div>
+    <div class="col-sm-7">
+        <h3 style="text-align:center; font-weight:bold; font-size:40px; color:#0d5164">TEXAS LEARNING METERIALS</h3>
+    </div>
+    <div class="col-sm-3">
+        <div style="margin-top:5px; padding:10px; text-align:right;">
+        Hello: <asp:Label ID="Label1" runat="server"></asp:Label> 
+            <asp:LinkButton ID="LinkOut" runat="server" OnClick="LinkOut_Click" CssClass="btn btn-outline-danger" >Logout</asp:LinkButton>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e4031f;">
+        <div class="mene">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <asp:Menu ID="MainMenu" runat="server" Orientation="horizontal" CssClass="navbar-nav mr-auto" StaticMenuStyle-CssClass="nav-item" StaticSelectedStyle-CssClass="nav-item" DynamicMenuStyle-CssClass="nav-item dropdown-menu" RenderingMode="List" role="menu" itemscope="itemscope" Font-Bold="True" Font-Names="Corbel Light" Font-Size="Medium" ForeColor="White" StaticEnableDefaultPopOutImage="false" >
+
+<DynamicMenuStyle CssClass="nav-item dropdown-menu" VerticalPadding="0px"></DynamicMenuStyle>
+                <DynamicSelectedStyle BackColor="#666666" />
+                <Items>
+                    <asp:MenuItem Text="Dashboard" Value="Dashboard" NavigateUrl="~/upload_sec/dash.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="1st Semester" Value="1st Semester">
+                        <asp:MenuItem Text="C Programming" Value="C Programming" NavigateUrl="~/upload_sec/first_sem/c_programming.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Internet Fundamental and Apllication" Value="Internet Fundamental" NavigateUrl="~/upload_sec/first_sem/internetfunda.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Busines English" Value="Busines Eng" NavigateUrl="~/upload_sec/first_sem/BusinessEng.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Mathematics 1" Value="Mathematics 1" NavigateUrl="~/upload_sec/first_sem/math1.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Basic Computer Architecture" Value="Basic Computer Architecture" NavigateUrl="~/upload_sec/first_sem/BasicCompArch.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="2nd Semester" Value="2nd Semester">
+                        <asp:MenuItem Text="C++ Programming" Value="C++ Programming" NavigateUrl="~/upload_sec/second_sem/CplusPlus.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Quantative Method" Value="Quantative Method" NavigateUrl="~/upload_sec/second_sem/QuantativeMethod.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Digital Logic" Value="Digital Logic" NavigateUrl="~/upload_sec/second_sem/DigitalLogic.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="System Analysis and Design" Value="System Analysis and Design" NavigateUrl="~/upload_sec/second_sem/SAD.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="LS &amp; HR" Value="LS &amp; HR" NavigateUrl="~/upload_sec/second_sem/LSHR.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Computer Network" Value="Computer Network" NavigateUrl="~/upload_sec/second_sem/CompNetwork.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="3rd Semester" Value="3rd Semester">
+                        <asp:MenuItem Text="Operating System" Value="Operating System" NavigateUrl="~/upload_sec/Third_sem/OperatingSys.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Database Management System" Value="Database Management System"  NavigateUrl="~/upload_sec/Third_sem/DBMS.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="E-Commerce" Value="E-Commerce"  NavigateUrl="~/upload_sec/Third_sem/Ecommerce.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Data Structure and Algorithm" Value="Data Structure and Algorithm"  NavigateUrl="~/upload_sec/Third_sem/DSA.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Web Technology" Value="Web Technology"  NavigateUrl="~/upload_sec/Third_sem/WebTechnology.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+
+
+                    <asp:MenuItem Text="4th Semester" Value="4th Semester">
+                        <asp:MenuItem Text="TCP/IP" Value="TCP/IP"  NavigateUrl="~/upload_sec/Fourth_sem/TCPIP.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Relational Database Management System" Value="RDBMS"  NavigateUrl="~/upload_sec/Fourth_sem/RDBMS.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Software Engineering" Value="Software Engineering"  NavigateUrl="~/upload_sec/Fourth_sem/SoftwareEngineering.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Fundamental of Algorithm" Value="Fundamental of Algorithm"  NavigateUrl="~/upload_sec/Fourth_sem/Fundamental Of Algorithm.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Java Programming" Value="Java Programming"  NavigateUrl="~/upload_sec/Fourth_sem/JAVA.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+
+
+                    <asp:MenuItem Text="5th Semester" Value="5th Semester">
+                        <asp:MenuItem Text="Artificial Intelligence" Value="Artificial Intelligence"  NavigateUrl="~/upload_sec/Fifth_sem/AI.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Mobile Computing" Value="Mobile Computing"  NavigateUrl="~/upload_sec/Fifth_sem/MobileComputing.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Compiler Design and Construction" Value="Compiler Design and Construction"  NavigateUrl="~/upload_sec/Fifth_sem/ComplierDesign.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Real Time System" Value="Real Time System"  NavigateUrl="~/upload_sec/Fifth_sem/RealTimeSyatem.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+
+                    <asp:MenuItem Text="6th Semester" Value="6th Semester">
+                         <asp:MenuItem Text="Cloud Computing" Value="Cloud Computing" NavigateUrl="~/upload_sec/Sixth_sem/CloudComputing.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Emerging Programming Platforms &Technologies" Value="EPPT"  NavigateUrl="~/upload_sec/Sixth_sem/EmergingTechnology.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="WML & WAP Programming" Value="WML"  NavigateUrl="~/upload_sec/Sixth_sem/WML.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Industrial Training" Value="Industrial Training"  NavigateUrl="~/upload_sec/Sixth_sem/IndustrialTraining.aspx"></asp:MenuItem>
+                        
+                    </asp:MenuItem>
+
+                </Items>
+
+                <LevelMenuItemStyles>
+                    <asp:MenuItemStyle CssClass="dropdown-item" HorizontalPadding="15px" Height="50px" VerticalPadding="15px" />
+                </LevelMenuItemStyles>
+                <LevelSelectedStyles>
+                    <asp:MenuItemStyle CssClass="nav-item active" Font-Underline="False" />
+                </LevelSelectedStyles>
+                <StaticHoverStyle Font-Underline="true" ForeColor="#339966" BackColor="#CCCCCC" Font-Bold="True" Font-Size="Large" />
+
+<StaticMenuStyle CssClass="nav-item"></StaticMenuStyle>
+
+                <StaticSelectedStyle Font-Bold="true"   />
+            <DynamicHoverStyle BackColor="#CC0000" />
+            <DynamicMenuItemStyle CssClass="dropdown-item" BackColor="#E4031F" BorderStyle="None" />
+        </asp:Menu>
+        </div>
+        </div>
+    </nav>
+
+<div class="container">
+            <div class="row">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            
+        </div>
+            </div>
+        <div class="card-footer" style="text-align:center; height:100px; background-color:#ff6c60 ">
+            
+            Copyright @ texas lerning portal- 2021/22
+        </div>
+    </form>
+</body>
+</html>
